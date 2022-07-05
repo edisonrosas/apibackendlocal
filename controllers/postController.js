@@ -42,7 +42,7 @@ const postLookup = [
 ];
 
 //revisar tipo de archivo
-/*
+
 function checkFileType(file, cb) {
 
   const filetypes = /jpeg|jpg|png|gif/;
@@ -62,8 +62,8 @@ function arrayRemove(array, value) {
   return array.filter((item) => {
     return item._id.toString() !== value.toString();
   });
-}*/
-/*
+}
+
 const storage = multer.diskStorage({
   //multers disk storage settings
   destination: (req, file, cb) => {
@@ -74,7 +74,7 @@ const storage = multer.diskStorage({
 
     cb(null, uuidv4() + "." + ext);
   },
-});*/
+});
 /*
 const upload = multer({
   //multer settings
@@ -86,7 +86,7 @@ const upload = multer({
     fileSize: 10485760, //10 MB
   },
 }).single("photo");*/
-/*
+
 exports.upload = async (req, res, next) => {
   upload(req, res, (err) => {
     //console.log(JSON.parse(JSON.stringify(req.body)))
@@ -115,7 +115,7 @@ exports.upload = async (req, res, next) => {
       next();
     });
   });
-};*/
+};
 
 exports.getPosts = (req, res) => {
   let query;
