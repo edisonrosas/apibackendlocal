@@ -119,6 +119,7 @@ exports.upload = async (req, res, next) => {
 
 exports.getPosts = (req, res) => {
   let query;
+  console.log(req.body)
   console.log("if",req.body.initialFetch)
   console.log("if",req.body.followings)
   if (req.body.initialFetch) {
@@ -157,11 +158,11 @@ exports.getPosts = (req, res) => {
           ],
           total: [
             // Filter out documents without a price e.g., _id: 7
-            {
+        /*    {
               $match: {
                 author: { $in: req.body.followings },
               },
-            },
+            },*/
             { $group: { _id: null, count: { $sum: 1 } } },
           ],
         },

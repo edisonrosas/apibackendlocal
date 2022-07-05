@@ -959,6 +959,7 @@ exports.getPosts = (req, res) => {
     .then((posts) => {
       //return res.status(200).json({  });
       //req.body.user.posts = posts;
+      console.log("posts",posts)
       return res.status(200).json({ posts });
     })
     .catch((err) => res.status(500).json({ message: err.message }));

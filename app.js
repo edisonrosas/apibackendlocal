@@ -27,7 +27,7 @@ const cors = require('cors')({
 
 
 //Conexión a mongo
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect("mongodb+srv://redsocial:redsocial123456@redsocialviajes.wgxmo.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
