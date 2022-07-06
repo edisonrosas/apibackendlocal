@@ -187,7 +187,7 @@ exports.activate = (req, res) => {
           <body>
               <div class="alert">
                   <strong>Exito!</strong> La cuenta se ha activado.
-                  <a href="http://localhost:3000/login"
+                  <a href="https://travelgo-vert.vercel.app/login"
                   target="_blank">Iniciar Sesion</a>
 
                   
