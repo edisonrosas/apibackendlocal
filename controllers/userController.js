@@ -476,6 +476,7 @@ exports.sendUserData = (req, res) => {
   if (req.user === undefined){
     return res.status(200).json({ user: req.body });
   }
+
   //console.log("userdata",req.user)
   //console.log("userbody",req.body)
   return res.status(200).json({ user: req.user });
